@@ -3,7 +3,7 @@ main(){
  FILE *fp;
  char nome[15], ch;
  
- printf("Digite o nome do arquivo a ser aberto: ");
+ printf("Digite o nome do arquivo a ser aberto: "); //COLOCAR EXTENSÃO .TXT OU .CSV OU ...
  gets(nome);
  
  if((fp = fopen(nome, "r"))==NULL){
