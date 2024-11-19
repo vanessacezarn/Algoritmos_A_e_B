@@ -13,7 +13,7 @@ main(){
  }
  printf("ARQUIVO TEXTO ABERTO COM SUCESSO!!!\n");
  ch = getc(fp);
- while (ch!=EOF){
+ while (ch!=EOF){ //EOF = FIM DO ARQUIVO
  putchar(ch);
  ch = getc(fp);
  } 
