@@ -75,7 +75,8 @@ int main(){
 
 
 
-
+    free(a);
+    free(b);
 
 return 0;
 }
