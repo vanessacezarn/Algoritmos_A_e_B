@@ -1,3 +1,6 @@
+//COMANDO DA QUESTÃO
+//Fazer a soma de dois vetores alocados dinamicamente. O tamanho dos vetores é informado pelo usuário.
+
 #include<stdio.h>
 #include<stdlib.h>
 
