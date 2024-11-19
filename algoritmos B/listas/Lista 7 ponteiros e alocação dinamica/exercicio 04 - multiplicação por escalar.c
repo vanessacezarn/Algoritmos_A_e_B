@@ -1,3 +1,7 @@
+//COMANDO DA QUESTÃO
+//Fazer a multiplicação de um escalar (um número) por uma matriz alocada dinamicamente. 
+//As dimensões da matriz são informadas pelo usuário.
+
 #include<stdio.h>
 #include<stdlib.h>
 
