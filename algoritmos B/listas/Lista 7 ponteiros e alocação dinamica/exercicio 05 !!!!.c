@@ -15,27 +15,33 @@ void mostravetor(int *a, int tam){
     int i;
     for(i=0;i<tam;i++){
         printf("\t%i",*(a+i));
+
     }
 return ;
 }
 
-int primo(int*a, int tam){
-    int p=0,d,d2,i;
+int contaprimo(int*a, int tam){
+    int p=0,n=0,i,primoc;
 
     for(i=0;i<tam;i++){
-        if(*(a+i)>=1){
-            d = *(a+i)%1;
-            d2 = *(a+i) % *(a+i);
-            if(d==0 && d2 ==0){
-                p=p+1;
-            }
+        n=*(a+i);
+        primoc = primo(n);
+        if(primoc==0){
+            p++;
         }
-    }
-
-
-return p;
+            }
+    return p;
 }
 
+
+int primo(int n){
+    int i, flag=0;
+    for(i=n;i>=2;i--){
+        if(n%i==0)
+            flag=1;
+    }
+    return flag;
+}
 
 int main(){
     int *a,tamanho,contador;
@@ -52,11 +58,10 @@ int main(){
     lervetor(a,tamanho);
     printf("\nVETOR DIGITADO: ");
     mostravetor(a,tamanho);
-    contador = primo(a,tamanho);
+    contador = contaprimo(a,tamanho);
     printf("\nEXISTEM %i NUMEROS PRIMOS NO VETOR DIGITADO",contador);
 
 
 return 0;
 }
-
 
