@@ -83,5 +83,9 @@ int main(){
     somamatriz(a,b,c,linha,coluna);
     printf("\n\tMATRIZ SOMA DE A E B\n");
     mostraMatriz(c,linha,coluna);
+
+    free(a);
+    free(b);
+    free(c);
 }
 
