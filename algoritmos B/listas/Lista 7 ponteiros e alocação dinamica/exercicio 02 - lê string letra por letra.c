@@ -1,7 +1,7 @@
 //COMANDO DA QUESTÃO
 //Faça um programa que lê uma string, letra por letra, e ao final da execução mostra a string completa. Antes 
-de começar a ler as letras de string, peça para o usuário informar o tamanho da string e aloque 
-dinamicamente um vetor com o tamanho necessário.
+//de começar a ler as letras de string, peça para o usuário informar o tamanho da string e aloque 
+//dinamicamente um vetor com o tamanho necessário.
 
 #include<stdio.h>
 #include<stdlib.h>
