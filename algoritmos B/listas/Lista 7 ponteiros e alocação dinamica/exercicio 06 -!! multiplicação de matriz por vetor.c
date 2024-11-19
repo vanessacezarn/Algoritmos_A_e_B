@@ -1,3 +1,7 @@
+//COMANDO DA QUESTÃO
+//Seja uma matriz A e um vetor B, cujos tamanhos e elementos são informados pelo usuário. 
+//Desenvolva um algoritmo para obter o vetor C que é o resultado da multiplicação da matriz A pelo vetor B.
+
 #include<stdio.h>
 #include<stdlib.h>
 
