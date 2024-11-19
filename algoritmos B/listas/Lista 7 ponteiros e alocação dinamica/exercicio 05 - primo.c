@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -25,20 +26,26 @@ int contaprimo(int*a, int tam){
 
     for(i=0;i<tam;i++){
         n=*(a+i);
-        primoc = primo(n);
-        if(primoc==0){
-            p++;
-        }
+        if(n>1){
+            primoc = primo(n);
+            //printf("\n\t%i",primoc);
+            if(primoc==0){
+                //printf("\n%i",n);
+                p++;
             }
+        }
+    }
     return p;
 }
 
+//PARA SER PRIMO O NUMERO TEM QUE SER DIVISIVEL POR 1 E POR ELE MESMO APENAS 
+int primo(int n){  // se flag = 0 --> O NUMERO EH PRIMO E SE FLAG =1 --> O NUMERO NÃO EH PRIMO 
+    int i, flag=0; // FLAG = 0 INDICA QUE O NUMERO JA E CONSIDERADO PRIMO 
 
-int primo(int n){
-    int i, flag=0;
-    for(i=n;i>=2;i--){
-        if(n%i==0)
-            flag=1;
+    for(i=2;i<n-1;i++){ // i COMECA EM DOIS POIS O 1 EH  DIVISOR DE TODOS OS NUMEROS PRIMOS E VAI ATE N-1 POIS TODO NUMERO EH DIVISOR DE SI MESMO 
+        if(n%i==0){
+            flag=1;  //CASO N SEJA DIVISIVEL POR QUALQUER OUTRO NUMERO DENTRO DO LAÇO INDICA QUE O NUMERO TEM UM DIVISOR ALEM DE 1 E DELE MESMO LOGO NÃO PODE SER PRIMO 
+        }
     }
     return flag;
 }
@@ -64,4 +71,3 @@ int main(){
 
 return 0;
 }
-
