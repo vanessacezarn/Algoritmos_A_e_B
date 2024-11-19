@@ -1,3 +1,7 @@
+//COMANDO DA QUESTÃO
+//Sejam duas matrizes A e B de mesmo tamanho e cujo tamanho é informado pelo usuário. 
+//Desenvolva um algoritmo para obter a soma das matrizes, utilizando alocação dinâmica e funções.
+
 #include<stdio.h>
 #include<stdlib.h>
 
