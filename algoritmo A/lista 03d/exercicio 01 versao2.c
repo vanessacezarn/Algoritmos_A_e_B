@@ -6,3 +6,28 @@
 //x2. Se as raízes forem imaginárias (∆ negativo, sendo ∆ = b2 - 4ac ) o algoritmo deverá
 //escrever que não foi possível calcular as raízes. Se a = 0, ele deve escrever que a equação
 // é de primeiro grau.
+
+#include<stdio.h>
+int main(){
+    int a,b,c,x1,x2,delta;
+    printf("***CALCULO DE BASKARA***\n");
+  do{
+      printf("\nDigite tres valores:");
+      scanf("%d%d%d",&a,&b,&c);
+      delta=b*b-4*a*c;
+    if(a==0){
+      printf("A EQUACAO DIGITADA EH DE PRIMEIRO GRAU");
+    }else{
+        if(delta<0){
+           printf("NÃO FOI POSSIVEL CALCULAR AS RAIZES\n");
+           printf("delta=%d\n",delta);
+        }else{
+            x1=-b+sqrt(b*b-(4*a*c))/2*a;
+            x2=-b-sqrt(delta)/2*a;
+            printf("x1=%d e x2=%d\n",x1,x2);
+        }
+     }
+     }while(a!=0 || b!=0 || c!=0);
+    
+  return 0;
+}
