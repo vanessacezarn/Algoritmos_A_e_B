@@ -4,3 +4,27 @@
 //apresentar ao usuário a mensagem: “Insira o número da fila:” para que o algoritmo leia o número de uma
 //fila e mostra a identificação de todas as cadeiras desta fila.
 
+#include<stdio.h>
+int main(){
+    int m[7][6],i,j,n;
+
+    for(i=0;i<7;i++){
+        for(j=0;j<6;j++){
+            m[i][j]=2+i-j;
+            printf("%d\t",m[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n digite o numero de fila:");
+    scanf("%d",&n);
+    for(i=0;i<7;i++){
+        for(j=0;j<6;j++){
+            if(j==n-1)
+            printf("%d\t",m[i][j]);
+        }
+    }
+
+
+return 0;
+}
+
