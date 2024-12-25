@@ -1,0 +1,15 @@
+//Faça um algoritmo para ler dois números inteiros. Calcular e mostrar o valor resultante se elevarmos a base representada pelo 
+//primeiro à potência representada pelo segundo.
+
+#include<stdio.h>
+int main(){
+  int a,b,r=1,i;
+  printf("digite dois numeros inteiros:");
+  scanf("%d %d",&a,&b);
+  for(i=0;i<=b;i++){
+    r=r*a;
+  }
+printf("%d elevado a %d eh %d",a,b,r);
+
+  return 0;
+}
