@@ -1,0 +1,37 @@
+//Faça um algoritmo para ler um número menor que 1000 e calcular e mostrar todos os números ímpares maiores que o número lido e 
+//menores que 1000.
+
+#include<stdio.h>
+int main(){
+  int n,i,r,x;
+  printf("digite um numero inteiro menor que 1000:");
+  scanf("%d",&n);
+  if(n>1000){
+    printf("numero INVALIDO");
+  }else{
+    r=n%2;
+    if(r==0){
+      printf("PAR\n");
+      x=n+1;
+      printf("numeros impares %d",x);
+    while(x<=1000){
+      x=x+2;
+      printf("\nnumeros impares");
+      printf("\t%d",x);
+    }
+    }else{
+      printf("IMPAR\n");
+      x=n;
+      while(x<=1000){
+        x=x+2;
+        printf("\nIMPARES");
+        printf("\t%d",x);
+      }
+      
+    }
+  }
+
+
+
+  return 0;
+}
