@@ -1,0 +1,8 @@
+//A comissão de formatura de um curso está organizando a festa de formaturra da sua turma e levantou as seguintes informações:
+//- custo do salão (capacidade de 800 pessoas, com mesas de 4 pessoas): R$ 2.000,00
+//- custo da sonorização: R$ 500,00  - custo da decoração: R$ 800,00
+//Além destes custos, que deverão ser rateados igualmente entre os formandos, há custos cuja divisão é proporcional ao número 
+//de convidados do formando. São eles: - segurança: necessário um segurança para cada 80 pessoas na festa
+//- garçom: um garçom consegue atender 48 pessoas - bebida
+// Escreva um algoritmo que leia a matrícula de cada um dos 5 formandos com seus respectivos números de convidados. Ele também deve ler
+//os custos de um segurança, de um garçom e da bebida. O algoritmo deve calcular e escrever, para cada formando, o custo da festa para ele.
