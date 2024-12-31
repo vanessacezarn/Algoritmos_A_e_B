@@ -2,7 +2,7 @@
 //manipulações desses dados, que precisam ser elaboradas. Com o uso de ferramentas de edição e compilação de programas, faça um 
 //programa para gerenciar o Controle de Pacientes, em um consultório pediátrico, conforme a descrição:Em um consultório pediátrico,
 //ha um sistema para Controle de Pacientes. No Cadastro de Paciente, são armazenados os seguintes dados:
-//Quadro 1 – Dados do Paciente
+//Quadro 1 – Dados do Paciente.
 //Código Paciente:  Nome do Paciente:Data de Nascimento:Nome da Mãe:Nome do Pai: Junto aos dados do Paciente, são armazenados também
 //os dados da Última Consulta:
 //Quadro 2 – Dados da Última Consulta
