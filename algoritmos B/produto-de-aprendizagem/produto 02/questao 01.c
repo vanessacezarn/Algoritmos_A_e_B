@@ -9,3 +9,47 @@
 //dispositivo (Ni é 0, 1 ou 9 para 1 ≤ i ≤ 8). 1 Adaptado da Maratona de Programação da SBC 2022  Saída: Imprima uma única linha 
 //contendo a letra maiúscula “S” caso todos os bits sejam lidos com sucesso; caso contrário imprima uma única linha contendo a 
 //letra maiúscula “F”, correspondendo a uma falha.
+
+//PRODUTO DE APRENDIZAGEM 2 - EXERCICIO 2
+//VANESSA CEZAR, LUIZA KARLEC, ERIC MARTINS
+
+//LUIZA
+#include <stdio.h>
+
+//FUNCAO PARA VERIFICAR OS BIT E RETORNAR A SAIDA
+char lerBits(int *e){
+    int i;
+    char s = 'S';
+    
+    for(i=0; i<9; i++){
+        if(*(e+i) != 0 && *(e+i) != 1){
+            *(e+i) = 9;
+            s = 'F';
+        }
+    }
+    return s;
+}
+
+//INICIO DO PROGRAMA
+int main(){
+    int entrada[9], i;
+    char saida;
+    
+    printf("**ENTRADA**\n\n");
+
+    //laço para ler bits
+    for(i=0; i<9; i++){
+        printf("Entrada [%i]: ", i); 
+        scanf("%i", &entrada[i]);
+        if(entrada[i] != 0 && entrada[i] != 1 && entrada[i] != 9){ //caso o bit nao seja 0, 1, ou 9, solicita novamente
+            printf("ERRO! digite novamente.\n"); 
+            i--;
+        }
+    }
+    
+    saida = lerBits(entrada);
+    printf("\n**SAIDA**\n\n");
+    printf("%c", saida);
+    
+    return 0;
+}
